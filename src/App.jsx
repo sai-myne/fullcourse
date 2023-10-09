@@ -4,15 +4,8 @@ import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from './MovieCard'
 
-const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey='+API_KEY
+const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey='+process.env.API_KEY
 
-const movie1 = {
-    "Title": "Italian Spiderman",
-    "Year": "2007",
-    "imdbID": "tt2705436",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BZWQxMjcwNjItZjI0ZC00ZTc4LWIwMzItM2Q0YTZhNzI3NzdlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg"
-}
 
 const App = () => {
     const [movies, setMovies] = useState([])
