@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { API_KEY } from './key'
+// import { API_KEY } from './key'
 import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from './MovieCard'
